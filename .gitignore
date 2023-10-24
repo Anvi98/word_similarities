@@ -1,0 +1,9 @@
+env
+__pycache__
+numpy_data
+lua-5.3.5
+draft.py 
+lua-5.3.5.tar.gz
+similarities.ipynb
+similarities.pdf
+test.py
