@@ -4,8 +4,8 @@
 ## Learning objectives
 
 - Learn how to compute basic fixed contexts of words in a corpus.
-- Learn how to generate Raw frequencies, Relative Frequencies, Term-Frequencies (TF), Inverse-Document-Frequency (IDF), TF-IDF and Finally BM25 Okapi of Terms from scratch without using fancy libraries (Only Numpy is necessary for that)
-- Lear Dynamic programming
+- Learn how to generate Raw frequencies, Relative Frequencies, Term-Frequencies (TF), Inverse-Document-Frequency (IDF), TF-IDF, and Finally BM25 Okapi of Terms from scratch without using fancy libraries (Only Numpy is necessary for that)
+- Learn Dynamic programming
 - Get insights on Their related performances.
 - A pre-work before understanding how LLMs perform tokenizations and extract contexts.
 
@@ -14,13 +14,13 @@
 
 In this repository, I implement an algorithm that:
 - Clean a raw Corpus 
-- Compute several type of frequencies as features
+- Compute several types of frequencies as features
 - Compute Similarities via Dot Product and Scaled Dot Product
 - Generate Files containing similarities of chosen words. (Which are in the generated vocabulary)
 
 ### Dataset
-The Corpus I used in this task, is the [COCA]('https://www.english-corpora.org/coca/') academic dataset. It contains 265 texts related to academic. After preprocessing
-the corpus I was left with roughly 36K tokens. You can get the dataset also from this repository. It is referred as 'text_acad.txt'.
+The Corpus I used in this task, is the [COCA]('https://www.english-corpora.org/coca/') academic dataset. It contains 265 texts related to academics. After preprocessing
+the corpus I was left with roughly 36K tokens. You can get the dataset also from this repository. It is referred to as 'text_acad.txt'.
 
 ### Workflow
 The execution of the code can be quite resource-intensive, depending on the machine and how it's configured. In my particular environment, it took an entire hour to generate all the required frequencies. To make this possible, I had to divide certain calculations into separate scripts since my system lacked the necessary memory to run everything in a single file. These scripts included:
@@ -36,7 +36,7 @@ One critical aspect was managing the all_imports.py file, as it is shared among 
 
 ### Task requirements
 
-- This task does require very few libraries. There are: Numpy, NLTK and spacy. But the code also needs to be runned in a virtual environment. Just create one and install the required packages via:
+- This task does require very few libraries. There are Numpy, NLTK, and Spacy. But the code also needs to be run in a virtual environment. Just create one and install the required packages via:
 ```
 pip3 install -r requirements.txt
 
